@@ -42,7 +42,7 @@ class Search extends React.Component {
                   onChange={this.handelFilter}
                   checked={this.state.type === 'all'}
                 />
-                <span>Все</span>
+                <span>All</span>
               </label>
               <label>
                 <input 
@@ -52,7 +52,7 @@ class Search extends React.Component {
                   data-type="movie" onChange={this.handelFilter} 
                   checked={this.state.type === 'movie'}
                 />
-                <span>Фильмы</span>
+                <span>Movies</span>
               </label>
               <label>
                 <input 
@@ -62,7 +62,7 @@ class Search extends React.Component {
                   data-type="series" onChange={this.handelFilter}
                   checked={this.state.type === 'series'} 
                 />
-                <span>Сериалы</span>
+                <span>Series</span>
               </label>
             </div>
           </div>

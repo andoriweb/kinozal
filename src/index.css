@@ -39,3 +39,7 @@ nav {
 label:not(:last-child) {
   margin-right: 2rem;
 }
+
+h5 {
+  color: red;
+}
