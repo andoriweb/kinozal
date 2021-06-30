@@ -14,8 +14,8 @@ class Main extends React.Component {
       .then(data => this.setState({movies: data.Search}))
   }
 
-  searchMovies = (str) => {
-    fetch(`https://www.omdbapi.com/?apikey=9d5ae151&s=${str}`)
+  searchMovies = (str, type = 'all') => {
+    fetch(`https://www.omdbapi.com/?apikey=9d5ae151&s=${str}${type !=='all' ? `&type=${type}` : ''}`)
       .then(response => response.json())
       .then(data => this.setState({movies: data.Search}))
   }
